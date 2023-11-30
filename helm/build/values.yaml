@@ -1,0 +1,15 @@
+app:
+  name: darmstadt-wind-turbine-app
+  namespace: darmstadt
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/darmstadt-wind-turbine
+  org: WindTurbineInc
+  name: darmstadt-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: darmstadt/wind-turbine-app
+  tag: latest
